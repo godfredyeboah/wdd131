@@ -1,0 +1,73 @@
+/* styles.css */
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #fff;
+}
+
+body {
+    display: grid;
+    grid-template-rows: auto auto 1fr auto;
+    grid-template-columns: 3fr 1fr;
+    grid-template-areas:
+        "header header"
+        "nav nav"
+        "main aside"
+        "footer footer";
+    height: 100%;
+}
+
+header {
+    grid-area: header;
+    background: #333;
+    text-align: left;
+    padding: 20px;
+    font-size: 1.5rem;
+}
+
+nav {
+    grid-area: nav;
+    background: #000;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+main {
+    grid-area: main;
+    background: #ccc;
+    padding: 20px;
+    color: #000;
+}
+
+aside {
+    grid-area: aside;
+    background: #fff;
+    padding: 20px;
+    color: #000;
+}
+
+footer {
+    grid-area: footer;
+    background: #333;
+    text-align: center;
+    padding: 20px;
+    font-size: 1rem;
+}
+
+/* Ensure the layout stretches fully */
+html, body, main, aside, footer {
+    box-sizing: border-box;
+}
