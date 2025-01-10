@@ -1,0 +1,141 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:wght@400;700&display=swap');
+
+
+/* General Reset */
+body, h1, h2, p, a, img, nav, footer {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header Styles */
+header {
+    background-color: #00050a;
+    color: white;
+    padding: 1.5rem 1rem;
+    text-align: center;
+}
+
+ h1 {
+    font-family: 'Lobster', cursive;
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+    background-color: #001f3f;
+    color: #f4f4f4;
+    text-align: center;
+}
+
+nav {
+    margin-top: 0.5rem;
+    display: flex;
+    justify-content:center;
+    gap: 1rem;
+}
+
+nav a {
+    color: rgb(231, 236, 240);
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    font-weight: bold;
+    border-radius: 5px;
+    display: flex;
+    transition: background-color 0.3s ease;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+  }
+
+nav a:hover {
+    background-color: #ff851b;
+}
+
+/* Main Section */
+main {
+    max-width: 1500px;
+    margin: 2rem auto;
+    display: grid;
+    grid-template-columns:repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    padding: 1rem;
+}
+
+.card {
+    background-color: white;
+    border: 2px solid #ddd;
+    border-radius: 20px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    align-items: start;
+}
+
+.card h2 {
+    grid-column: span 2;
+    text-align: center;
+    font-family: 'Lobster', cursive;
+    font-size: 1.5rem;
+    color: #f7f9fc;
+    background-color: #001f3f;
+    margin-bottom: 0.8rem;
+}
+
+.card div {
+    grid-column: span 2;
+}
+
+.card p {
+    margin-bottom: 1rem;
+    line-height: 1.5;
+    
+}
+
+.card img {
+    max-width: 90%;
+    border-radius: 5px;
+    justify-self: center;
+    margin-top: 1rem;
+}
+
+.resources a {
+    display: block;
+    color: #0074d9;
+    text-decoration: none;
+    margin: 0.5rem 0;
+    font-weight: bold;
+}
+
+.resources a:hover {
+    text-decoration: underline;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #001f3f;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    font-size: 0.9rem;
+}
+
+footer p {
+    margin: 0.5rem 0;
+}
+
+.footer span {
+    font-weight: bold;
+}
