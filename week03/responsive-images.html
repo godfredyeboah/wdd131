@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Responsive Images | Godfred Opoku Yeboah</title>
+        <meta name="description" content="Applying Responsive Images To A Web Page">
+        <meta name="author" content="Godfred Opoku Yeboah">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Lobster&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles/responsive-images.css">
+        <script src="scripts/getdates.js" defer></script>
+     </head>
+<body>
+ <header>
+    <h1>Responsive Images | Godfred Opoku Yeboah</h1>
+ </header> 
+ <main>
+    <div class="hero">
+        <picture>
+            <source srcset="images/hero-large.webp" media="min-width: 1000px">
+            <source srcset="images/hero-medium.webp" media="min-width: 500px">
+            <img src="images/hero-small.webp" alt="Coban Guatamala Temple" width="400" height="200">
+        </picture>
+    </div>
+ </main>
+ 
+ <footer>
+    <p>&copy;  <span id="currentyear"></span>🌻 Godfred Opoku Yeboah 🌻 Ghana</p>
+        <p id="lastModified"></p>
+ </footer>
+</body>
+</html>

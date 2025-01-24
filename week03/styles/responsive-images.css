@@ -1,0 +1,27 @@
+.hero img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+
+  body {
+    background-color: #f5c7ed;
+  }
+
+  h1 {
+    background-color: #051852;
+    color: #fff;
+    position: relative;
+    text-align: center;
+    font-style: oblique;
+  }
+
+  footer {
+	margin-top: 1rem;
+	border-top: 1px solid rgb(0 0 0 / 0.1);
+	padding: 0.5rem 0;
+	font-size:medium;
+    text-align: center;
+    background-color: #051852;
+    color: #fff;
+}
