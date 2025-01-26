@@ -55,7 +55,7 @@
     padding: 1rem;
     border-radius: 8px;
     grid-area: data;
-    top: 20%;
+    top: 19%;
     left: 1%;
   }
   
@@ -65,7 +65,7 @@
     padding: 1rem;
     border-radius: 8px;
     grid-area: weather;
-    bottom: -3%;
+    bottom: -5%;
     right: 1%;
   }
   
