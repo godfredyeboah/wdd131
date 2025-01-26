@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Accra | Ghana</title>
+        <meta name="description" content="Accra - Ghana, a place I live.">
+        <meta name="author" content="Godfred Opoku Yeboah">
+        <link href="https://fonts.googleapis.com/css2?family=Bokor&family=Cormorant+Garamond&family=Edu+AU+VIC+WA+NT+Arrows&family=Edu+AU+VIC+WA+NT+Pre&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:wght@100;400&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles/place-large.css">
+        <link rel="stylesheet" href="styles/place.css">
+        <script src="scripts/getdates.js" defer></script>
+        <script src="scripts/place.js" defer></script>
+     </head>
+<body>
+ <header>
+    <h1>Accra | Ghana</h1>
+ </header> 
+ <main>
+    <section class="hero">
+        <picture>
+          <source srcset="images/Accra-Ghana-large.webp" media="(min-width: 1000px)">
+          <source srcset="images/Accra-Ghana-medium.webp" media="(min-width: 500px)">
+          <img src="images/Accra-Ghana-small.webp" alt="Indipendence Square, Accra-Ghana" width="400" height="200">
+        </picture>
+      </section>
+
+      <!-- Data Section -->
+    <section class="data">
+        <h2>Data</h2>
+        <ul>
+          <li><strong>Area:</strong> 225.67 sq km</li>
+          <li><strong>Population:</strong> 2,603,000</li>
+          <li><strong>Capital:</strong> Accra</li>
+          <li><strong>Languages:</strong> English, Akan, Ga</li>
+          <li><strong>Currency:</strong> Ghanaian Cedi (GHS)</li>
+          <li><strong>Time Zone:</strong> GMT</li>
+          <li><strong>Calling Code:</strong> +233</li>
+          <li><strong>Internet TLD:</strong> .gh</li>
+        </ul>
+      </section>
+  
+      <!-- Weather Section -->
+      <section class="weather">
+        <h2>Weather</h2>
+        <p><strong>Temperature:</strong> 30°C</p>
+        <p><strong>Conditions:</strong> Partly Cloudy</p>
+        <p><strong>Wind:</strong> 15 km/h</p>
+        <p><strong>Wind Chill:</strong> <span id="wind-chill">N/A</span></p>
+      </section>
+ </main>
+ 
+ <footer>
+    <p>&copy;  <span id="currentyear"></span>🌻 Godfred Opoku Yeboah 🌻 Ghana</p>
+        <p id="lastModified"></p>
+ </footer>
+</body>
+</html>
