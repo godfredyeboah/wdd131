@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Temple Album | Godfred Opoku Yeboah</title>
+        <meta name="description" content="Displaying beautiful pictures of temples in the world">
+        <meta name="author" content="Godfred Opoku Yeboah">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles/filtered-temples.css">
+        <link rel="stylesheet" href="styles/filtered-temples-large.css">
+        <script src="scripts/filtered-temples.js" defer></script>
+        <script src="scripts/getdates.js" defer></script>
+     </head>
+<body>
+ <header>
+    <h1>Temple Album | Godfred Opoku Yeboah</h1>
+    <button class="hamburger">☰</button>
+    <nav>
+        <ul class="navigation">
+            <li><a href="#" data-filter="home" class="active">Home</a></li>
+            <li><a href="#" data-filter="old">Old</a></li>
+            <li><a href="#" data-filter="new">New</a></li>
+            <li><a href="#" data-filter="large">Large</a></li>
+            <li><a href="#" data-filter="small">Small</a></li>
+        </ul>
+    </nav>
+ </header> 
+ <main>
+    <h2 class="center">Home</h2>
+    
+    <div class="gallery"></div>
+
+ </main>
+ 
+ <footer>
+    <p>&copy;  <span id="currentyear"></span>🌻 Godfred Opoku Yeboah 🌻 Ghana</p>
+        <p id="lastModified"></p>
+ </footer>
+
+</body>
+</html>

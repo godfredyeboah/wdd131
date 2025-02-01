@@ -1,0 +1,27 @@
+/* For larger screens (tablet and above) */
+@media (min-width: 768px) {
+    .navigation {
+        display: flex;
+        flex-direction: row;
+        position: static;
+        background: none;
+        padding: 0;
+        gap: 1rem;
+        list-style: none;
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+    .gallery {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 2rem;
+    }
+
+    
+}
+
+
+
+
