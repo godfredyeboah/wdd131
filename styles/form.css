@@ -1,0 +1,134 @@
+:root {
+    --primary-color: #020c3b;
+	--secondary-color: #faa805;
+	--accent1-color: #0e0707;
+	--accent2-color: #d6d6d6;
+    --heading-font: "Montserrat", Sans-serif, Arial;
+    --text-font: "Bokor", Serif, 'Cormorant';
+    --paragraph-font: "Roboto", Garamond, 'Arrows';
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f4;
+    text-align: center;
+    margin: 20px;
+}
+
+.container {
+    max-width: 400px;
+    margin: auto;
+}
+
+h1 {
+    background-color: var(--primary-color);
+    color: white;
+    margin-bottom: 10px;
+    padding: 1rem;
+    text-align: center;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+form {
+    background: var(--accent2-color);
+    padding: 30px;
+    max-width: 400px;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+label, legend {
+    display: block;
+    text-align: left;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+fieldset p {
+    display: block;
+    text-align: left;
+    margin-top: 10px;
+    font-weight: bold;
+    font-style: italic;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+/* stars */
+input[type="radio"] {
+	display: none;
+	position: relative;
+	caret-color: rgba(0, 0, 0, 0);
+}
+
+.stars {
+	display: flex;
+	flex-direction: row-reverse;
+	justify-content: left;
+}
+
+.stars > label {
+	color: gold;
+	width: 30px;
+	height: 30px;
+	font-size: 2rem;
+	margin-left: 5px;
+	display: flex;
+	align-items: center;
+	caret-color: rgba(0, 0, 0, 0); /* remove blinking cursor*/
+}
+
+.stars > label:hover {
+	color: #000;
+}
+
+.stars > label::before {
+	content: "\2606";
+}
+
+.stars input:checked ~ label::before {
+	content: "\2605";
+}
+
+input[type="radio"], input[type="checkbox"] {
+    width: auto;
+}
+
+input[type="submit"] {
+    background: var(--accent1-color);
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px;
+    cursor: pointer;
+    border: none;
+    margin-top: 20px;
+}
+
+input[type="submit"]:hover {
+    color: var(--accent1-color);
+    background-color: var(--secondary-color);
+    border-radius: 10px;
+}
+
+footer {
+    max-width: 370px;
+    padding: 1rem;
+    margin: auto;
+    margin-top: 10px;
+    text-align: center;
+    background-color: var(--primary-color);
+    color: white;
+    font-size: 0.9rem;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}

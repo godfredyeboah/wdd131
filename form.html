@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Form | Godfred Opoku Yeboah</title>
+        <meta name="description" content="creating form for product review">
+        <meta name="author" content="Godfred Opoku Yeboah">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles/form.css">
+        <link rel="stylesheet" href="styles/filtered-temples-large.css">
+        <script src="scripts/form.js" defer></script>
+        <script src="scripts/getdates.js" defer></script>
+     </head>
+<body>
+    <div class="container">
+        <h1>Product Review</h1>
+        <form action="form-review.html" method="get">
+            <!-- Product Name Dropdown -->
+            <label for="product">Product Name:</label>
+            <select id="product" name="product" required>
+                <option value="" disabled selected>Select a Product ...</option>
+            </select>
+
+            <!-- Overall Rating -->
+            <fieldset>
+                <legend>Overall Rating</legend>
+                <div class="stars">
+                    <input type="radio" id="fivestar" name="stars" value="5" required><label for="fivestar"></label>
+                    <input type="radio" id="fourstar" name="stars" value="4" required><label for="fourstar"></label>
+                    <input type="radio" id="threestar" name="stars" value="3" required><label for="threestar"></label>
+                    <input type="radio" id="twostar" name="stars" value="2" required><label for="twostar"></label>
+                    <input type="radio" id="onestar" name="stars" value="1" required><label for="onestar"></label>
+                </div>
+            </fieldset>
+
+            <!-- Date of Installation -->
+            <label for="install-date">Date of Installation:</label>
+            <input type="date" id="install-date" name="install_date" required>
+
+            <!-- Useful Features -->
+            <fieldset>
+                <legend>Which features did you find useful?</legend><br>
+                <p>(Check all that apply)</p>
+                <label><input type="checkbox" name="features" value="Durability"> Durability</label>
+                <label><input type="checkbox" name="features" value="Ease of Use"> Ease of Use</label>
+                <label><input type="checkbox" name="features" value="Performance"> Performance</label>
+                <label><input type="checkbox" name="features" value="Design"> Design</label>
+            </fieldset>
+
+            <!-- Written Review -->
+            <label for="review">Written Review (Optional):</label>
+            <textarea id="review" name="review"></textarea>
+
+            <!-- User Name -->
+            <label for="username">Your Name (Optional):</label>
+            <input type="text" id="username" name="username">
+
+            <!-- Submit Button -->
+            <input type="submit" value="Post Review">
+        </form>
+    </div>
+    <footer>
+        <p>&copy;  <span id="currentyear"></span>🌻 Godfred Opoku Yeboah 🌻 Ghana</p>
+            <p id="lastModified"></p>
+     </footer>
+
+</body>
+</html>
